@@ -7,8 +7,6 @@ fun main() {
     println(solution.isSubsequence(str1, str2))
 }
 
-
-
 class Solution {
     fun isSubsequence(s: String, t: String): Boolean {
         val subSize = s.length
