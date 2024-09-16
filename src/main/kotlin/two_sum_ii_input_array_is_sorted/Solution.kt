@@ -1,33 +1,34 @@
 package org.example.two_sum_ii_input_array_is_sorted
 
 fun main() {
-    val str1 = "acbc"
-    val str2 = "ahcbgdc"
+    val arr = arrayOf(-1,0).toIntArray()
+    val num = -1
     val solution = Solution()
-    println(solution.isSubsequence(str1, str2))
+    println(solution.twoSum(arr, num).contentToString())
 }
 
 class Solution {
-    fun isSubsequence(s: String, t: String): Boolean {
-        val subSize = s.length
-        val parentSize = t.length
-        if (subSize > parentSize) return false
+    fun twoSum(numbers: IntArray, target: Int): IntArray {
+        val result = IntArray(2) {0}
 
-        var i = 0
-        var j = 0
+        var start = 0
+        var end = numbers.lastIndex
 
-        while (i < subSize) {
-            if (s[i] == t[j]){
-                i++
-                j++
-                if (i >= subSize) return true
-                if (j >= parentSize) return false
+        while (start < end) {
+            if (numbers[start] + numbers[end] == target) {
+                result[0] = start + 1
+                result[1] = end + 1
+                return result
             }
-            if (s[i] != t[j]) {
-                j++
-                if (j >= parentSize) return false
+            if (numbers[start] + numbers[end] < target) {
+                start++
+            }
+
+            if (numbers[start] + numbers[end] > target) {
+                end--
             }
         }
-        return true
+
+        return result
     }
 }
