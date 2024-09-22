@@ -1,8 +1,5 @@
 package org.example.game_of_life
 
-import kotlin.and
-import kotlin.collections.get
-
 fun main() {
     val arr =
         arrayOf(
