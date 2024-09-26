@@ -1,12 +1,12 @@
 package org.example
 
 fun main() {
-    val gas = arrayOf(7,1,0,11,4).toIntArray()
-    val cost = arrayOf(5,9,1,2,5).toIntArray()
-    val str1 = "acbc"
-    val str2 = "ahcbgdc"
-}
+    var result = 0
+    val arr = mutableListOf<Int>(0,1)
 
-class Solution {
-
+    for (i in 2..10) {
+        result = arr[i-1] + arr[i-2]
+        arr.add(result)
+    }
+    println(result)
 }
