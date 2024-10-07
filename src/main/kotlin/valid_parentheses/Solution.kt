@@ -9,7 +9,7 @@ fun main() {
     println(result)
 }
 
-class Solution {
+private class Solution {
     //[0,0],[0,0],[4,4],[0,0],[1,3],[5,5],[4,6],[1,1],[0,2]
     fun isValid(s: String): Boolean {
         val stack = Stack<Char>()

@@ -30,11 +30,11 @@ fun main() {
         result = result.next
     }
 }
-class ListNode(var `val`: Int) {
+private class ListNode(var `val`: Int) {
     var next: ListNode? = null
 }
 
-class Solution {
+private class Solution {
     fun reverseBetween(head: ListNode?, left: Int, right: Int): ListNode? {
         val list = arrayListOf<Int>()
         var current = head

@@ -6,7 +6,7 @@ fun main() {
     println(solution.summaryRanges(arr))
 }
 
-class Solution {
+private class Solution {
     fun summaryRanges(nums: IntArray): List<String> {
         val result = mutableListOf<String>()
         var i = 0

@@ -7,7 +7,7 @@ fun main() {
     println(solution.isIsomorphic(str1, str2))
 }
 
-class Solution {
+private class Solution {
     fun isIsomorphic(s: String, t: String): Boolean {
         val mapS = mutableMapOf<Char, Char>()
         val mapT = mutableMapOf<Char, Char>()

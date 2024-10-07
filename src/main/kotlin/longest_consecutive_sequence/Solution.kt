@@ -8,7 +8,7 @@ fun main() {
     println(solution.longestConsecutive(arr))
 }
 
-class Solution {
+private class Solution {
     fun longestConsecutive(nums: IntArray): Int {
         if (nums.size == 0) return 0
         val set = nums.toSet()

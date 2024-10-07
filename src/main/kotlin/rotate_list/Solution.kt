@@ -22,11 +22,11 @@ fun main() {
         result = result.next
     }
 }
-class ListNode(var value: Int) {
+private class ListNode(var value: Int) {
     var next: ListNode? = null
 }
 
-class Solution {
+private class Solution {
     fun rotateRight(head: ListNode?, k: Int): ListNode? {
         if (head == null) return null
         if (head.next == null) {

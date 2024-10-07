@@ -10,7 +10,7 @@ fun main() {
     println(result)
 }
 
-class Solution {
+private class Solution {
     fun simplifyPath(path: String): String {
         var simplePath = path.replace("/+".toRegex(), "/")
         if (simplePath.length > 1 && simplePath.last() == '/') {

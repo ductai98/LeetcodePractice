@@ -12,7 +12,7 @@ fun main() {
     println(solution.spiralOrder(arr))
 }
 
-class Solution {
+private class Solution {
     fun spiralOrder(matrix: Array<IntArray>): List<Int> {
         val result = mutableListOf<Int>()
 

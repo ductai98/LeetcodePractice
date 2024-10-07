@@ -6,7 +6,7 @@ fun main() {
     println(solution.groupAnagrams(str1))
 }
 
-class Solution {
+private class Solution {
     fun groupAnagrams(strs: Array<String>): List<List<String>> {
         var size = strs.size
         val anagrams = mutableListOf<String>()

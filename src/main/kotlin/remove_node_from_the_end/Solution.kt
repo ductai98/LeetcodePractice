@@ -30,11 +30,11 @@ fun main() {
         result = result.next
     }
 }
-class ListNode(var value: Int) {
+internal class ListNode(var value: Int) {
     var next: ListNode? = null
 }
 
-class Solution {
+private class Solution {
     fun removeNthFromEnd(head: ListNode?, n: Int): ListNode? {
         var size = 0
         var curr = head

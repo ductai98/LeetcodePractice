@@ -7,7 +7,7 @@ fun main() {
     println(solution.isPalindrome(str1))
 }
 
-class Solution {
+private class Solution {
     fun isPalindrome(s: String): Boolean {
         val str = s.replace("[^A-Za-z0-9]".toRegex(), "").lowercase()
 

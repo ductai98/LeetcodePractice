@@ -13,7 +13,7 @@ fun main() {
     solution.gameOfLife(arr)
 }
 
-class Solution {
+private class Solution {
     fun gameOfLife(board: Array<IntArray>): Unit {
         val rows = board.size
         val cols = board[0].size

@@ -12,7 +12,7 @@ fun main() {
     solution.setZeroes(arr)
 }
 
-class Solution {
+private class Solution {
     fun setZeroes(matrix: Array<IntArray>): Unit {
         val zeroPositions = mutableListOf<Pair<Int, Int>>()
         val rowCount = matrix.size

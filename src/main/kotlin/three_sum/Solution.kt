@@ -6,7 +6,7 @@ fun main() {
     println(solution.threeSum(arr))
 }
 
-class Solution {
+private class Solution {
     fun threeSum(nums: IntArray): List<List<Int>> {
         nums.sort()
         //[-4,-1,-1,-1,0,1,2]

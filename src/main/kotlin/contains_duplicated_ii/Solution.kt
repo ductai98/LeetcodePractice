@@ -8,7 +8,7 @@ fun main() {
     println(solution.containsNearbyDuplicate(arr, 2))
 }
 
-class Solution {
+private class Solution {
     fun containsNearbyDuplicate(nums: IntArray, k: Int): Boolean {
         val map = mutableMapOf<Int, Int>()
 

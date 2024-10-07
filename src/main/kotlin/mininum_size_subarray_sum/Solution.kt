@@ -8,7 +8,7 @@ fun main() {
     println(solution.minSubArrayLen(2, arr))
 }
 
-class Solution {
+private class Solution {
     fun minSubArrayLen(target: Int, nums: IntArray): Int {
         var start = 0
         var end = 0

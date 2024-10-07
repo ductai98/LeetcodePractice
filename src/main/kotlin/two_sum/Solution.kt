@@ -6,7 +6,7 @@ fun main() {
     println(solution.twoSum(arr, 9).contentToString())
 }
 
-class Solution {
+private class Solution {
     fun twoSum(nums: IntArray, target: Int): IntArray {
         val map = mutableMapOf<Int, Int>()
 

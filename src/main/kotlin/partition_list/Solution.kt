@@ -25,11 +25,11 @@ fun main() {
         result = result.next
     }
 }
-class ListNode(var `val`: Int) {
+internal class ListNode(var `val`: Int) {
     var next: ListNode? = null
 }
 
-class Solution {
+private class Solution {
     fun partition(head: ListNode?, x: Int): ListNode? {
         if (head == null) return null
         if (head.next == null) {

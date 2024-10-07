@@ -7,7 +7,7 @@ fun main() {
     println(solution.twoSum(arr, num).contentToString())
 }
 
-class Solution {
+private class Solution {
     fun twoSum(numbers: IntArray, target: Int): IntArray {
         val result = IntArray(2) {0}
 

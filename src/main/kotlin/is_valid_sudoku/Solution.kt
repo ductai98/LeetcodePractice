@@ -18,7 +18,7 @@ fun main() {
     println(solution.isValidSudoku(arr))
 }
 
-class Solution {
+private class Solution {
     fun isValidSudoku(board: Array<CharArray>): Boolean {
         val rows = Array(9) { mutableSetOf<Char>() }
         val cols = Array(9) { mutableSetOf<Char>() }

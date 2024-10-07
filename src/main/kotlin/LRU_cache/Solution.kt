@@ -12,11 +12,11 @@ fun main() {
     println(lruCache.get(4))
 
 }
-class ListNode(var value: Int) {
+private class ListNode(var value: Int) {
     var next: ListNode? = null
 }
 
-class LRUCache(capacity: Int) {
+private class LRUCache(capacity: Int) {
     val cap = capacity
     data class Node(var key: Int, var value: Int) {
         var prev: Node? = null

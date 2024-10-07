@@ -7,7 +7,7 @@ fun main() {
     println(solution.isAnagram(str1, str2))
 }
 
-class Solution {
+private class Solution {
     fun isAnagram(s: String, t: String): Boolean {
         val mapS = mutableMapOf<Char, Int>()
         val mapT = mutableMapOf<Char, Int>()

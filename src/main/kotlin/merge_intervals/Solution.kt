@@ -19,7 +19,7 @@ fun main() {
     }
 }
 
-class Solution {
+private class Solution {
     //[0,0],[0,0],[4,4],[0,0],[1,3],[5,5],[4,6],[1,1],[0,2]
     fun merge(intervals: Array<IntArray>): Array<IntArray> {
         val intervalsSet = intervals.distinctBy {

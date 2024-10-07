@@ -7,7 +7,7 @@ fun main() {
     println(solution.canConstruct(str1, str2))
 }
 
-class Solution {
+private class Solution {
     fun canConstruct(ransomNote: String, magazine: String): Boolean {
         val ransomMap = mutableMapOf<Char, Int>()
         val magazineMap = mutableMapOf<Char, Int>()

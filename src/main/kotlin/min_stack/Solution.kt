@@ -14,7 +14,7 @@ fun main() {
     println(minStack.getMin())
 }
 
-class MinStack() {
+private class MinStack() {
     val stack = mutableListOf<Int>()
     var minValue = Int.MAX_VALUE
     var preMin = mutableListOf<Int>()

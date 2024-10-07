@@ -9,7 +9,7 @@ fun main() {
     println(solution.maxArea(arr))
 }
 
-class Solution {
+private class Solution {
     fun maxArea(height: IntArray): Int {
         var result = 0
         var start = 0

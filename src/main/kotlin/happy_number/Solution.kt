@@ -6,7 +6,7 @@ fun main() {
     println(solution.isHappy(2))
 }
 
-class Solution {
+private class Solution {
     fun isHappy(n: Int): Boolean {
         var str = n.toString()
         var result = 0

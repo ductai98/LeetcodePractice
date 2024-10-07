@@ -15,11 +15,11 @@ fun main() {
     val result = solution.hasCycle(node1)
     println(result)
 }
-class ListNode(var value: Int) {
+private class ListNode(var value: Int) {
       var next: ListNode? = null
 }
 
-class Solution {
+private class Solution {
     fun hasCycle(head: ListNode?): Boolean {
         val list = mutableListOf<ListNode>()
 

@@ -12,7 +12,7 @@ fun main() {
     solution.rotate(arr)
 }
 
-class Solution {
+private class Solution {
     fun rotate(matrix: Array<IntArray>): Unit {
         val size = matrix.size
         for (i in 0 until size) {

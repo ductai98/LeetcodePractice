@@ -31,11 +31,11 @@ fun main() {
         print("${result?.`val`} ->")
     }
 }
-class ListNode(var `val`: Int) {
+private class ListNode(var `val`: Int) {
     var next: ListNode? = null
 }
 
-class Solution {
+private class Solution {
     fun mergeTwoLists(list1: ListNode?, list2: ListNode?): ListNode? {
         var l1 = list1
         var l2 = list2

@@ -1,6 +1,6 @@
 package org.example.interger_to_roman
 
-class Solution {
+private class Solution {
     fun intToRoman(num: Int): String {
         val romanMap = listOf(
             1000 to "M", 900 to "CM", 500 to "D", 400 to "CD",

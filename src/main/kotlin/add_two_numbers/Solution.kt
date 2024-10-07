@@ -32,11 +32,11 @@ fun main() {
         print("${result?.`val`} ->")
     }
 }
-class ListNode(var `val`: Int) {
+private class ListNode(var `val`: Int) {
       var next: ListNode? = null
 }
 
-class Solution {
+private class Solution {
     fun addTwoNumbers(l1: ListNode?, l2: ListNode?): ListNode? {
         var list1 = l1
         var list2 = l2

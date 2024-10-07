@@ -9,7 +9,7 @@ fun main() {
     println(solution.canJump(arr))
 }
 
-class Solution {
+private class Solution {
     fun canJump(nums: IntArray): Boolean {
         var maxJump = 0
         var i = 0

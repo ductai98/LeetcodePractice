@@ -29,11 +29,11 @@ fun main() {
         result = result.next
     }
 }
-class ListNode(var `val`: Int) {
+internal class ListNode(var `val`: Int) {
     var next: ListNode? = null
 }
 
-class Solution {
+private class Solution {
     fun deleteDuplicates(head: ListNode?): ListNode? {
         val duplicatedSet = HashSet<Int>()
         var result = ListNode(-200)

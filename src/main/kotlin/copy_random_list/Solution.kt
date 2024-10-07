@@ -31,12 +31,12 @@ fun main() {
         print("${result?.`val`} ->")
     }
 }
-class Node(var `val`: Int) {
+private class Node(var `val`: Int) {
     var next: Node? = null
     var random: Node? = null
 }
 
-class Solution {
+private class Solution {
     fun copyRandomList(node: Node?): Node? {
         if (node == null) return null
 

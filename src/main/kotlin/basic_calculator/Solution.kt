@@ -9,7 +9,7 @@ fun main() {
     println(result)
 }
 
-class Solution {
+private class Solution {
     fun calculate(s: String): Int {
         val stack = ArrayDeque<Int>()
         var currentNumber = 0

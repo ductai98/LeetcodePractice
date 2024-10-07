@@ -9,7 +9,7 @@ fun main() {
     println(result)
 }
 
-class Solution {
+private class Solution {
     fun evalRPN(tokens: Array<String>): Int {
         val stack = ArrayDeque<Int>()
 

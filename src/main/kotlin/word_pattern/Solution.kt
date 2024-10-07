@@ -7,7 +7,7 @@ fun main() {
     println(solution.wordPattern(str1, str2))
 }
 
-class Solution {
+private class Solution {
     fun wordPattern(pattern: String, s: String): Boolean {
         val mapS = mutableMapOf<Char, String>()
         val mapT = mutableMapOf<String, Char>()

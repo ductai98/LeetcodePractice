@@ -8,7 +8,7 @@ fun main() {
     println(solution.lengthOfLongestSubstring(str))
 }
 
-class Solution {
+private class Solution {
     fun lengthOfLongestSubstring(s: String): Int {
         var substr = ""
         var maxLen = 0
