@@ -1,12 +1,18 @@
 package org.example
 
 fun main() {
-    var result = 0
-    val arr = mutableListOf<Int>(0,1)
+    val arr = arrayOf(1,2,3,4,5,6,7,8,9,10)
 
-    for (i in 2..10) {
-        result = arr[i-1] + arr[i-2]
-        arr.add(result)
-    }
-    println(result)
+
+    println(binarySearch(arr, 0, 9, 6))
+}
+
+fun binarySearch(array: Array<Int>, left: Int, right : Int, value: Int) : Int{
+    val mid = (left + right) / 2
+
+    if (left > right) return -1
+    if (array[mid] == value) return mid
+    if (array[mid] < value) return binarySearch(array, mid + 1, right, value)
+    if (array[mid] > value) return binarySearch(array, left, mid, value)
+    return -1
 }
