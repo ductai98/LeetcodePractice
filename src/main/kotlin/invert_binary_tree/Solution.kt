@@ -43,6 +43,8 @@ fun main() {
 private class Solution {
     fun invertTree(root: TreeNode?): TreeNode? {
         if (root == null) return null
+
+        println("val = ${root.`val`}, left = ${root.left?.`val`}, right = ${root.right?.`val`}")
         val temp = TreeNode(0).apply {
             left = root.left
         }
