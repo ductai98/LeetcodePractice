@@ -25,7 +25,7 @@ fun main() {
         result = result.next
     }
 }
-internal class ListNode(var `val`: Int) {
+private class ListNode(var `val`: Int) {
     var next: ListNode? = null
 }
 

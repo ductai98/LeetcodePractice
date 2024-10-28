@@ -30,7 +30,7 @@ fun main() {
         result = result.next
     }
 }
-internal class ListNode(var value: Int) {
+private class ListNode(var value: Int) {
     var next: ListNode? = null
 }
 
