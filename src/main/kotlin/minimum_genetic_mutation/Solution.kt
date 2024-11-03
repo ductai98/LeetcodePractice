@@ -15,6 +15,7 @@ private class Solution {
         queue.add(startGene to 0)
         val visited = mutableSetOf<String>()
         val genChars = charArrayOf('A', 'C', 'G', 'T')
+
         while (queue.isNotEmpty()) {
             val pair = queue.removeFirst()
             val currentGen = pair.first
