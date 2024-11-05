@@ -3,8 +3,8 @@ package org.example.add_binary
 import kotlin.math.abs
 
 fun main() {
-    val a = "11"
-    val b = "1"
+    val a = "1010"
+    val b = "1011"
     println(Solution().addBinary(a,b))
 }
 
@@ -24,8 +24,8 @@ private class Solution {
             numb = zeroes + numb
         }
         var i = len - 1
-        var result = ArrayDeque<Char>()
-        var keep = '0'
+        var result = ""
+        var keep = "0"
         while (i >= 0) {
             val num1 = numa[i]
             val num2 = numb[i]
@@ -36,31 +36,31 @@ private class Solution {
 
             when(num) {
                 "00" -> {
-                    result.addFirst(keep)
-                    keep = '0'
+                    result = keep + result
+                    keep = "0"
                 }
                 "01", "10" -> {
-                    if (keep == '0') {
-                        result.addFirst('1')
+                    if (keep == "0") {
+                        result = "1$result"
                     } else {
-                        result.addFirst('0')
+                        result = "0$result"
                     }
                 }
                 "11" -> {
-                    if (keep == '0') {
-                        result.addFirst('0')
-                        keep = '1'
+                    if (keep == "0") {
+                        result = "0$result"
+                        keep = "1"
                     } else {
-                        result.addFirst('1')
+                        result = "1$result"
                     }
                 }
             }
             i--
         }
-        if (keep != '0') {
-            result.addFirst(keep)
+        if (keep != "0") {
+            result = keep + result
         }
 
-        return result.joinToString("")
+        return result
     }
 }
