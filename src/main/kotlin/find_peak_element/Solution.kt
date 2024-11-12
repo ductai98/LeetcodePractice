@@ -1,6 +1,6 @@
 package org.example.find_peak_element
 
-class Solution {
+private class Solution {
     fun findPeakElement(nums: IntArray): Int {
         var start = 0
         var end = nums.size - 1

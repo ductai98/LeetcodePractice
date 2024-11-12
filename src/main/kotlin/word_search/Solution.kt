@@ -10,7 +10,7 @@ fun main() {
     println(Solution().exist(board, "SEE"))
 }
 
-class Solution {
+private class Solution {
     fun exist(board: Array<CharArray>, word: String): Boolean {
         val rows = board.size
         val cols = board[0].size

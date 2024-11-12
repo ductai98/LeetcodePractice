@@ -5,7 +5,7 @@ fun main() {
     println(solution.totalNQueens(4))
 }
 
-class Solution {
+private class Solution {
     fun totalNQueens(n: Int): Int {
         val board = Array(n) { CharArray(n) {'.'} }
         var result = 0

@@ -5,7 +5,7 @@ fun main() {
     println(Solution().searchRange(array, 1).contentToString())
 }
 
-class Solution {
+private class Solution {
     fun searchRange(nums: IntArray, target: Int): IntArray {
         val left = binarySearch(nums, target, true)
         val right = binarySearch(nums, target, false)

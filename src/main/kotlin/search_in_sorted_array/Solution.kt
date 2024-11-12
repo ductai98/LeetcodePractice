@@ -5,7 +5,7 @@ fun main() {
     println(Solution().search(array, 2))
 }
 
-class Solution {
+private class Solution {
     fun search(nums: IntArray, target: Int): Int {
         var left = 0
         var right = nums.size - 1

@@ -5,7 +5,7 @@ fun main() {
     println(Solution().findMin(array))
 }
 
-class Solution {
+private class Solution {
     fun findMin(nums: IntArray): Int {
         var left = 0
         var right = nums.size - 1

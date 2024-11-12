@@ -1,6 +1,6 @@
 package org.example.convert_sorted_array_to_bst
 
-class Solution {
+private class Solution {
     fun sortedArrayToBST(nums: IntArray): TreeNode? {
         fun buildRoot(l: Int, r: Int): TreeNode? {
             if (l > r) {

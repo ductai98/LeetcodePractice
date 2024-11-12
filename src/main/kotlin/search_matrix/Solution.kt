@@ -8,7 +8,7 @@ fun main() {
     println(Solution().searchMatrix(array, 1))
 }
 
-class Solution {
+private class Solution {
     fun searchMatrix(matrix: Array<IntArray>, target: Int): Boolean {
         var start = 0
         var end = matrix.size

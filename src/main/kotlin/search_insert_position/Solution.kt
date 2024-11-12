@@ -5,7 +5,7 @@ fun main() {
     println(solution.searchInsert(intArrayOf(1), 1))
 }
 
-class Solution {
+private class Solution {
     fun searchInsert(nums: IntArray, target: Int): Int {
         var start = 0
         var end = nums.size - 1
