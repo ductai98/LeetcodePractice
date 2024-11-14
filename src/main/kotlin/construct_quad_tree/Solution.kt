@@ -1,6 +1,5 @@
 package org.example.construct_quad_tree
 
-import org.example.arr
 
 fun main() {
     val input = arrayOf(

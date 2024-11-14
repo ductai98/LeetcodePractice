@@ -1,6 +1,6 @@
 package org.example
-val checked = arrayOf(false, false, false, false)
-val arr = Array<Int>(4) {-1}
+private val checked = arrayOf(false, false, false, false)
+private val arr = Array<Int>(4) {-1}
 fun main() {
     println(backtrack(1))
 }
