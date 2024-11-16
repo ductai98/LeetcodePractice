@@ -1,24 +1,27 @@
 package org.example
-private val checked = arrayOf(false, false, false, false)
-private val arr = Array<Int>(4) {-1}
+private val array = intArrayOf(1,2,3,4,5)
 fun main() {
-    println(backtrack(1))
+    println(maxProfit(array))
 }
 
-fun backtrack(step: Int) {
-    if (step > 4) {
-        arr.forEach {
-            print("$it  ")
+fun maxProfit(prices: IntArray): Int {
+    var profit = 0
+    var result = 0
+    var min = prices.first()
+    var i = 0
+    while (i < prices.size) {
+        if (prices[i] < min) {
+            min = prices[i]
+        } else {
+            if (prices[i] - min > profit) {
+                profit = prices[i] - min
+                result += profit
+                profit = 0
+                min = prices[i]
+            }
         }
-        println()
-        return
+        i++
     }
-    for (i in 0 until 4) {
-        if (!checked[i]) {
-            arr[i] = step
-            checked[i] = true
-            backtrack(step + 1)
-            checked[i] = false
-        }
-    }
+
+    return result
 }
